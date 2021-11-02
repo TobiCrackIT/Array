@@ -9,37 +9,46 @@ contract Array {
     uint[10] public myFixedSizeArr;
 
     function get(uint i) public view returns (uint) {
-        return arr[i];
+        // write logic for getting an element
+
     }
 
     // Solidity can return the entire array.
     // But this function should be avoided for
     // arrays that can grow indefinitely in length.
     function getArr() public view returns (uint[] memory) {
-        return arr;
+        // write logic for getting the entire array
+        
     }
 
     function push(uint i) public {
         // Append to array
         // This will increase the array length by 1.
-        arr.push(i);
+
+        //  write logic for appending to the array
+        
     }
 
     function pop() public {
         // Remove last element from array
         // This will decrease the array length by 1
-        arr.pop();
+
+        // write logic for removing the last element
+        
     }
 
     function getLength() public view returns (uint) {
-        return arr.length;
+        // write logic for getting the length of the array
+        
     }
 
     function remove(uint index) public {
         // Delete does not change the array length.
         // It resets the value at index to it's default value,
         // in this case 0
-        delete arr[index];
+
+        // write logic for removing an element
+
     }
 
     // Deleting an element creates a gap in the array.
@@ -47,7 +56,9 @@ contract Array {
     // move the last element into the place to delete.
     function removeCompact(uint index) public {
         // Move the last element into the place to delete
-        arr[index] = arr[arr.length - 1];
+
+        // write logic for moving the last element into the place to delete
+        
         // Remove the last element
         arr.pop();
     }
