@@ -8,21 +8,21 @@ We will write code to do different operations on array like adding, removing, ge
 
 There are several ways to initialize an array.
 
-Let's write first one.
-Here we are just decalring an array named arr and not initializing it with values.
+Let's write the first one.
+Here, we are just declaring an array named arr and not initializing it with values.
 
 ```
     uint[] public arr;
 ```
 
-Let's write an array and initilize it with values.
+Let's write an array and initialize it with values.
 
 ```
     uint[] public arr2 = [1, 2, 3];
 ```
 
 Now, we will write an array with fixed size.
-In this case, it will be initilized with zeros by default.
+In this case, it will be initialized with zeros by default.
 
 ```
     uint[10] public myFixedSizeArr;
